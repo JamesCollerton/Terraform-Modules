@@ -18,7 +18,7 @@ resource "aws_iam_role" "iam_for_lambda" {
 EOF
 }
 
-resource "aws_lambda_function" "${var.lambda_function_name}" {
+resource "aws_lambda_function" "aws_lambda_function" {
   filename         = "${var.lambda_function_filename}"
   function_name    = "${var.lambda_function_name}"
   role             = "${aws_iam_role.iam_for_lambda.arn}"
