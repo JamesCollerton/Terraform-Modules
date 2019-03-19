@@ -3,7 +3,7 @@ variable "api_gateway_name" {
   type 		= "string" 
 }
 
-description = "api_gateway_description" {
+variable "api_gateway_description" {
   description 	= "The description of your API gateway"
   type 		= "string" 
 }
