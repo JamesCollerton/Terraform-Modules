@@ -1,8 +1,4 @@
-output "id" {
-  value = "${aws_lambda_function.aws_lambda_function.id}"
-}
-
-output "root_resource_id" {
-  value = "${aws_lambda_function.aws_lambda_function.id}"
+output "invoke_arn" {
+  value = "${aws_lambda_function.aws_lambda_function.invoke_arn}"
 }
 
