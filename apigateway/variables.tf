@@ -8,8 +8,3 @@ variable "api_gateway_description" {
   type 		= "string" 
 }
 
-variable "api_gateway_body" {
-  description 	= "The relative path to the OpenAPI YAML specification"
-  type 		= "string" 
-}
-
