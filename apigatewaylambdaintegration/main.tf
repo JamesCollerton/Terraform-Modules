@@ -1,13 +1,13 @@
 resource "aws_api_gateway_resource" "aws_api_gateway_resource" {
   rest_api_id = "${var.api_gateway_id}"
   parent_id   = "${var.api_gateway_root_id}"
-  path_part   = "{proxy+}"
+  path_part   = "${var.api_gateway_path_part}"
 }
 
 resource "aws_api_gateway_method" "aws_api_gateway_method" {
   rest_api_id 	= "${var.api_gateway_id}"
   resource_id   = "${aws_api_gateway_resource.aws_api_gateway_resource.id}"
-  http_method   = "ANY"
+  http_method   = "${var.api_gateway_http_method}"
   authorization = "NONE"
 }
 
