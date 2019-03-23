@@ -13,3 +13,8 @@ variable "lambda_function_handler" {
   type 		= "string"
 }
 
+variable "iam_for_lambda_arn" {
+  description 	= "ARN for the IAM role for the lambda"
+  type 		= "string"
+}
+
