@@ -24,10 +24,7 @@ variable "${var.dynamo_db_range_key}" {
 }
 
 variable "${var.dynamo_db_list_of_attributes}" {
-  type 		= "list(object({
-			name = "string",
-			type = "string"
-		}))"
+  type 		= "list"
   description   = "A list of objects representing the attributes we would like in our table"
 }
 
