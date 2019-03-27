@@ -4,12 +4,12 @@ variable "dynamo_db_table_name" {
 }
 
 variables "dynamo_db_read_capacity" {
-  type 		= "number"
+  type 		= "string"
   description   = "The number of provisioned read capacity we would like"
 }
 
 variable "dynamo_db_write_capacity" {
-  type 		= "number"
+  type 		= "string"
   description   = "The number of provisioned write capacity we would like"
 }
 
