@@ -3,7 +3,7 @@ variable "dynamo_db_table_name" {
   description 	= "The name of the DynamoDb table we would like to create"
 }
 
-variables "dynamo_db_read_capacity" {
+variable "dynamo_db_read_capacity" {
   type 		= "string"
   description   = "The number of provisioned read capacity we would like"
 }
