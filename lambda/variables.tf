@@ -1,7 +1,7 @@
-variable "lambda_function_filename" { 
-  description 	= "Name of the zip file we will upload as the lambda"
-  type 		= "string"
-}
+#variable "lambda_function_filename" { 
+#  description 	= "Name of the zip file we will upload as the lambda"
+#  type 		= "string"
+#}
 
 variable "lambda_s3_bucket" {
   description 	= "Name of the S3 bucket where we want to store our code"
