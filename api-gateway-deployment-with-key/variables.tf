@@ -1,5 +1,5 @@
 variable "${var.api_gateway_dependencies}" {
-  type 		= "list"
+  type 		= "list(string)"
   description 	= "A list of dependencies to finish before the api gateway starts"
 }
 
