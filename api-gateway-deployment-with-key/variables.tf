@@ -12,3 +12,5 @@ variable "depends_on_proxy" {
   type 		= "list"
   description 	= "This is a work around for a list of dependent resources, by passing the Ids in here we create a dependency between the two areas."
 }
+
+variable "depends_on" { default = [], type = "list"}
