@@ -23,7 +23,7 @@ variable "api_gateway_http_method" {
   type 		= "string"
 }
 
-variable "api_key_required" {
+variable "api_gateway_key_required" {
   description 	= "Whether or not we would like the method secured via API key"
-  type 		= "boolean"
+  type 		= "string"
 }
