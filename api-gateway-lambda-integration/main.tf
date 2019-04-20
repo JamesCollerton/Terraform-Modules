@@ -5,10 +5,11 @@ resource "aws_api_gateway_resource" "aws_api_gateway_resource" {
 }
 
 resource "aws_api_gateway_method" "aws_api_gateway_method" {
-  rest_api_id 	= "${var.api_gateway_id}"
-  resource_id   = "${aws_api_gateway_resource.aws_api_gateway_resource.id}"
-  http_method   = "${var.api_gateway_http_method}"
-  authorization = "NONE"
+  rest_api_id 		= "${var.api_gateway_id}"
+  resource_id   	= "${aws_api_gateway_resource.aws_api_gateway_resource.id}"
+  http_method   	= "${var.api_gateway_http_method}"
+  api_key_required 	= "${var.api_gateway_key_required}"
+  authorization 	= "NONE"
 }
 
 resource "aws_api_gateway_integration" "lambda_aws_api_gateway_integration" {
