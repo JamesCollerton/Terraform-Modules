@@ -5,5 +5,6 @@ resource "aws_lambda_function" "aws_lambda_function" {
   role             = "${var.iam_for_lambda_arn}"
   handler          = "${var.lambda_function_handler}"
   memory_size	   = "${var.lambda_memory_size}"
+  timeout  	   = "${var.lambda_timeout}"
   runtime          = "java8"
 }

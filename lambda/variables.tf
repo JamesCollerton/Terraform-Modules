@@ -23,6 +23,11 @@ variable "lambda_memory_size" {
   type 		= "string"
 }
 
+variable "lambda_timeout" {
+  description 	= "The amount of time before we want to conside the lambda timed out"
+  type 		= "string"
+}
+
 variable "iam_for_lambda_arn" {
   description 	= "ARN for the IAM role for the lambda"
   type 		= "string"
