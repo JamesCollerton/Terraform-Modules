@@ -18,6 +18,11 @@ variable "lambda_function_handler" {
   type 		= "string"
 }
 
+variable "lambda_memory_size" {
+  description 	= "The amount of memory to allocate for the lambda"
+  type 		= "string"
+}
+
 variable "iam_for_lambda_arn" {
   description 	= "ARN for the IAM role for the lambda"
   type 		= "string"
