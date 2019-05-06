@@ -13,9 +13,10 @@ resource "aws_api_gateway_method" "aws_api_gateway_method" {
 }
 
 resource "aws_api_gateway_integration" "lambda_aws_api_gateway_integration" {
-  rest_api_id 	= "${var.api_gateway_id}"
-  resource_id 	= "${aws_api_gateway_method.aws_api_gateway_method.resource_id}"
-  http_method 	= "${aws_api_gateway_method.aws_api_gateway_method.http_method}"
+  rest_api_id 		= "${var.api_gateway_id}"
+  resource_id 		= "${aws_api_gateway_method.aws_api_gateway_method.resource_id}"
+  http_method 		= "${aws_api_gateway_method.aws_api_gateway_method.http_method}"
+  timeout_milliseconds 	= "${var.api_gateway_timeout_milliseconds}" 
 
   integration_http_method = "POST"
   type                    = "AWS_PROXY"

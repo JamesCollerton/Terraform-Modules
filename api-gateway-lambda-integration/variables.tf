@@ -27,3 +27,8 @@ variable "api_gateway_key_required" {
   description 	= "Whether or not we would like the method secured via API key"
   type 		= "string"
 }
+
+variable "api_gateway_timeout_milliseconds" {
+  description 	= "Time in milliseconds before the API integration times out"
+  type 		= "string"
+}
